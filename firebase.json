@@ -1,1 +1,39 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"notesapp-94a70","appId":"1:435202849859:android:a881e3f44c4fd1c1c828f6","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"notesapp-94a70","configurations":{"android":"1:435202849859:android:a881e3f44c4fd1c1c828f6","ios":"1:435202849859:ios:642ad29f7a2fcee5c828f6","macos":"1:435202849859:ios:642ad29f7a2fcee5c828f6","web":"1:435202849859:web:e408fc654c7e292dc828f6","windows":"1:435202849859:web:26dcf3ef46e4aeb0c828f6"}}}}}}
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "notesapp-94a70",
+          "appId": "1:435202849859:android:a881e3f44c4fd1c1c828f6",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "notesapp-94a70",
+          "configurations": {
+            "android": "1:435202849859:android:a881e3f44c4fd1c1c828f6",
+            "ios": "1:435202849859:ios:642ad29f7a2fcee5c828f6",
+            "macos": "1:435202849859:ios:642ad29f7a2fcee5c828f6",
+            "web": "1:435202849859:web:e408fc654c7e292dc828f6",
+            "windows": "1:435202849859:web:26dcf3ef46e4aeb0c828f6"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

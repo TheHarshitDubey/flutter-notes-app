@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:notesapp/firebase/firebase_options.dart';
 import 'package:notesapp/theme/theme_notifier.dart';
 import 'package:provider/provider.dart';
 
@@ -15,7 +16,9 @@ Future<void> main() async {
   // Keep splash screen
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 
   // Remove splash screen
   FlutterNativeSplash.remove();

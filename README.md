@@ -23,6 +23,7 @@ git clone https://github.com/TheHarshitDubey/flutter-notes-app.git
 cd flutter-notes-app
 flutter pub get
 flutter run
+```
 
 ---
 

@@ -1,45 +1,39 @@
 plugins {
     id "com.android.application"
-    // START: FlutterFire Configuration
+    id "org.jetbrains.kotlin.android"
     id "com.google.gms.google-services"
-    // END: FlutterFire Configuration
-    id "kotlin-android"
-    id "dev.flutter.flutter-gradle-plugin"
 }
 
 android {
-    namespace = "com.example.notesapp"
-    compileSdk = 34   // ✅ Forced API 34
-    ndkVersion = flutter.ndkVersion
+    namespace "com.example.notesapp"
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.example.notesapp"
+        minSdk 21
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+    }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
     kotlinOptions {
         jvmTarget = "17"
     }
-
-    defaultConfig {
-        applicationId = "com.example.notesapp"
-        minSdk = 23
-        targetSdk = 34   // ✅ Match compileSdk
-        versionCode = flutter.versionCode
-        versionName = flutter.versionName
-    }
-
-    buildTypes {
-        release {
-            signingConfig = signingConfigs.debug
-        }
-    }
-}
-
-flutter {
-    source = "../.."
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.23"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.22"
 }

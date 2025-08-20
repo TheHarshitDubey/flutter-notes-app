@@ -29,15 +29,15 @@ class _RegisterPageState extends State<RegisterPage> {
       password: passwordController.text.trim(),
     );
 
-    print("✅ Registered Successfully: ${userCredential.user!.email}");
+    print(" Registered Successfully: ${userCredential.user!.email}");
     Navigator.pushReplacementNamed(context, '/home');
   } on FirebaseAuthException catch (e) {
-    print("❌ Registration Failed: ${e.message}");
+    print(" Registration Failed: ${e.message}");
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(content: Text(e.message ?? "Registration Failed")),
     );
   } catch (e) {
-    print("❌ Registration Failed: $e");
+    print(" Registration Failed: $e");
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(content: Text("Registration Failed: $e")),
     );
@@ -70,11 +70,15 @@ class _RegisterPageState extends State<RegisterPage> {
           children: [
             TextField(
               controller: emailController,
-              decoration: const InputDecoration(labelText: "Email"),
+              decoration:  InputDecoration(labelText: "Email",
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(5),
+              )),
             ),
             TextField(
               controller: passwordController,
-              decoration: const InputDecoration(labelText: "Password"),
+              decoration:  InputDecoration(labelText: "Password",
+              border: OutlineInputBorder(borderRadius: BorderRadius.circular(5))),
               obscureText: true,
             ),
             const SizedBox(height: 20),

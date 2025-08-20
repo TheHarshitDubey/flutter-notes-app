@@ -18,7 +18,6 @@ class NoteCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        // Show dialog with View + Edit
         showDialog(
           context: context,
           builder: (context) => AlertDialog(
@@ -31,8 +30,8 @@ class NoteCard extends StatelessWidget {
               ),
               TextButton(
                 onPressed: () {
-                  Navigator.pop(context); // close view dialog
-                  onEdit(); // trigger edit
+                  Navigator.pop(context); 
+                  onEdit();
                 },
                 child: const Text('Edit'),
               ),

@@ -8,19 +8,18 @@ import 'package:provider/provider.dart';
 
 import 'pages/home_page.dart';
 import 'pages/login_page.dart';
-import 'pages/register.dart';
+import 'pages/register_page.dart';
 
 Future<void> main() async {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
 
-  // Keep splash screen
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  // Remove splash screen
+
   FlutterNativeSplash.remove();
 
   runApp(

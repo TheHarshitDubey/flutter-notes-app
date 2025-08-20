@@ -86,7 +86,9 @@ Future<void> signUp() async {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Login'),actions: [
+      appBar: AppBar(title: const Text('Login',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 37),),
+      centerTitle: true,
+      actions: [
         IconButton(
       icon: Icon(Icons.brightness_6),
       onPressed: () {
@@ -104,11 +106,20 @@ Future<void> signUp() async {
             ],
             TextField(
               controller: emailController,
-              decoration: const InputDecoration(labelText: 'Email'),
+              decoration:  InputDecoration(labelText: 'Email',
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(5),
+              )),
             ),
+            SizedBox(height: 16,),
+
             TextField(
               controller: passwordController,
-              decoration: const InputDecoration(labelText: 'Password'),
+              decoration: InputDecoration(labelText: 'Password',
+              border:OutlineInputBorder(
+                borderRadius: BorderRadius.circular(5),
+              )
+               ),
               obscureText: true,
             ),
             const SizedBox(height: 20),
@@ -120,6 +131,7 @@ Future<void> signUp() async {
                     onPressed: signIn,
                     child: const Text('Sign In'),
                   ),
+                  SizedBox(height: 4,),
                   TextButton(
   onPressed: () {
     Navigator.pushNamed(context, '/register');

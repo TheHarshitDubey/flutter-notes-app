@@ -37,7 +37,7 @@ flutter run
 
 ---
 
-##🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 Flutter (Dart)
 Firebase Authentication
@@ -46,7 +46,7 @@ Provider (for theme management)
 
 ---
 
-##📌 Future Improvements
+## 📌 Future Improvements
 
 Categories & search for notes
 Pinning important notes
@@ -55,7 +55,7 @@ Export notes as PDF
 
 ---
 
-##👨‍💻 About Me
+## 👨‍💻 About Me
 
 Hey, I’m Harshit Dubey 👋
 
@@ -66,14 +66,14 @@ Hey, I’m Harshit Dubey 👋
 
 ---
 
-##📌 Connect with me:
+## 📌 Connect with me:
 
 LinkedIn: https://www.linkedin.com/in/harshit-dubey13
 GitHub: https://github.com/TheHarshitDubey
 
 ---
 
-##⭐ Support
+## ⭐ Support
 
 If you like this project, please star the repo 🌟.
 Feedback, ideas, and contributions are always welcome!

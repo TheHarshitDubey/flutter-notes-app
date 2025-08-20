@@ -24,7 +24,10 @@ cd flutter-notes-app
 flutter pub get
 flutter run
 
+---
+
 ## 📸 Screenshots
+
 ![Login Page](screenshots/loginPage.jpeg)
 ![Home Page](screenshots/homePage1.jpeg)
 ![Dark Theme](screenshots/darkTheme.jpeg)
@@ -32,6 +35,7 @@ flutter run
 ![Splash Screen](screenshots/splashScreen.jpeg)
 ![Add Notes](screenshots/addNotes.jpeg)
 
+---
 
 ##🛠️ Tech Stack
 
@@ -40,6 +44,7 @@ Firebase Authentication
 Cloud Firestore
 Provider (for theme management)
 
+---
 
 ##📌 Future Improvements
 
@@ -48,6 +53,7 @@ Pinning important notes
 Reminders & notifications
 Export notes as PDF
 
+---
 
 ##👨‍💻 About Me
 
@@ -58,10 +64,14 @@ Hey, I’m Harshit Dubey 👋
 🤖 Learning Generative AI alongside Flutter to stay future-ready
 🚀 I believe in learning by building projects and experimenting with new tech
 
+---
+
 ##📌 Connect with me:
 
 LinkedIn: https://www.linkedin.com/in/harshit-dubey13
 GitHub: https://github.com/TheHarshitDubey
+
+---
 
 ##⭐ Support
 

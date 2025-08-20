@@ -24,6 +24,7 @@ cd flutter-notes-app
 flutter pub get
 flutter run
 
+## 📸 Screenshots
 ![Login Page](screenshots/loginPage.jpeg)
 ![Home Page](screenshots/homePage1.jpeg)
 ![Dark Theme](screenshots/darkTheme.jpeg)
@@ -32,7 +33,7 @@ flutter run
 ![Add Notes](screenshots/addNotes.jpeg)
 
 
-🛠️ Tech Stack
+##🛠️ Tech Stack
 
 Flutter (Dart)
 Firebase Authentication
@@ -40,7 +41,7 @@ Cloud Firestore
 Provider (for theme management)
 
 
-📌 Future Improvements
+##📌 Future Improvements
 
 Categories & search for notes
 Pinning important notes
@@ -48,7 +49,7 @@ Reminders & notifications
 Export notes as PDF
 
 
-👨‍💻 About Me
+##👨‍💻 About Me
 
 Hey, I’m Harshit Dubey 👋
 
@@ -57,12 +58,12 @@ Hey, I’m Harshit Dubey 👋
 🤖 Learning Generative AI alongside Flutter to stay future-ready
 🚀 I believe in learning by building projects and experimenting with new tech
 
-📌 Connect with me:
+##📌 Connect with me:
 
 LinkedIn: https://www.linkedin.com/in/harshit-dubey13
 GitHub: https://github.com/TheHarshitDubey
 
-⭐ Support
+##⭐ Support
 
 If you like this project, please star the repo 🌟.
 Feedback, ideas, and contributions are always welcome!

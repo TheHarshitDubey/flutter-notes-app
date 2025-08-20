@@ -52,15 +52,10 @@ class _RegisterPageState extends State<RegisterPage> {
   title: const Text("Register"),
   actions: [
     IconButton(
-      icon: Icon(
-        Provider.of<ThemeNotifier>(context).isDarkMode
-            ? Icons.light_mode
-            : Icons.dark_mode,
-      ),
-      onPressed: () {
-        Provider.of<ThemeNotifier>(context, listen: false).toggleTheme();
-      },
-    )
+     icon: Icon(Icons.brightness_6),
+     onPressed:(){
+      Provider.of<ThemeNotifier>(context,listen: false).toggleTheme();
+     },)
   ],
 ),
 
@@ -75,6 +70,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 borderRadius: BorderRadius.circular(5),
               )),
             ),
+            SizedBox(height: 16,),
             TextField(
               controller: passwordController,
               decoration:  InputDecoration(labelText: "Password",
